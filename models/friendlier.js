@@ -17,12 +17,13 @@ var acts = {
     orm.update("random_acts", objColVals, condition, function(res) {
       cb(res);
     });
-  },
-  delete: function(condition, cb) {
-    orm.delete("random_acts", condition, function(res) {
-      cb(res);
-    });
   }
+//   ,
+//   delete: function(condition, cb) {
+//     orm.delete("random_acts", condition, function(res) {
+//       cb(res);
+//     });
+//   }
 };
 
 // Export the database functions for the controller (catsController.js).
