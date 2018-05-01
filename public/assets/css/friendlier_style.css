@@ -39,8 +39,9 @@ h4{
     color: #5070B5;
 }
 
-.mdl-layout_drawer, .mdl-layout_drawer.is-visible{
+div.demo-layout-transparent mdl-layout mdl-js-layout has-drawer is-small-screen is-upgraded, div.mdl-layout_drawer, div.mdl-layout_drawer.is-visible{
     width: 300px;
+    background: #58CCB6 !important;
 }
 
 .mdl-layout__drawer>.mdl-layout__title, .mdl-layout__drawer>.mdl-layout-title {
