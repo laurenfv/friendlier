@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFCF5;
+    background-color: #FFFCF2;
 }
 
 .demo-layout-transparent {
@@ -39,10 +39,10 @@ h4{
     color: #5070B5;
 }
 
-div.demo-layout-transparent mdl-layout mdl-js-layout has-drawer is-small-screen is-upgraded, div.mdl-layout_drawer, div.mdl-layout_drawer.is-visible{
+/* div.demo-layout-transparent.mdl-layout.mdl-js-layout.has-drawer.is-small-screen.is-upgraded, div.mdl-layout_drawer, div.mdl-layout_drawer.is-visible{
     width: 300px;
     background: #58CCB6 !important;
-}
+} */
 
 .mdl-layout__drawer>.mdl-layout__title, .mdl-layout__drawer>.mdl-layout-title {
     padding-left: 10px;
@@ -60,3 +60,11 @@ div.demo-layout-transparent mdl-layout mdl-js-layout has-drawer is-small-screen 
     background-color: pink !important;
     transition: background-color 200ms linear;
 } */
+
+/* header.mdl-layout__header--fixed.mdl-layout__header--transparent {
+    border-bottom: solid 3px #FFD470;
+} */
+
+ul {
+    font-size: 24px;
+}

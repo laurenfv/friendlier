@@ -1,6 +1,6 @@
-CREATE DATABASE friendlier_db;
-USE friendlier_db;
+USE heroku_795fa8d6925eaa0;
 
+DROP TABLE IF EXISTS random_acts;
 CREATE TABLE random_acts
 (
 	id int NOT NULL AUTO_INCREMENT,

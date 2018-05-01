@@ -27,7 +27,7 @@
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                 <input type="radio" class="mdl-radio__button" name="done" value="0"> <span class="mdl-radio__label">Yes</span></label>
             </div> --}}
-            <button type="submit">Add</button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">Add</button>
         </form>
     </div>
 </div>
@@ -35,7 +35,7 @@
   <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
         <h2>To Do:</h2>
 
-        <ul>
+        <ul class="demo-list-item mdl-list">
         {{#each random_acts}}
             {{#unless done}}
             {{> act/act-block done=true}}
@@ -46,7 +46,7 @@
 <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
         <h2>Completed!</h2>
 
-        <ul>
+        <ul class="demo-list-item mdl-list">
         {{#each random_acts}}
             {{#if done}}
             {{> act/act-block done=false}}
