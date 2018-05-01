@@ -1,12 +1,12 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
+require('dotenv').config();
 
 var connection = mysql.createConnection({
-  port: 8889,
-  host: "localhost",
-  user: "root",
-  password: "root",
-  database: "friendlier_db"
+  host: "us-cdbr-iron-east-05.cleardb.net",
+  user: process.env.DB_User,
+  password: process.env.DB_Password,
+  database: "heroku_795fa8d6925eaa0"
 });
 
 // Make connection.
