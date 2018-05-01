@@ -1,3 +1,61 @@
 body {
-    background-color: #00ffff;
+    background-color: #FFFCF5;
 }
+
+.demo-layout-transparent {
+    background: url('../assets/demos/transparent.jpg') center / cover;
+  }
+  .demo-layout-transparent .mdl-layout__header,
+  .demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: black;
+}
+
+img {
+    float: right;
+}
+
+h1{
+    padding: 0 0 0 40px;
+    text-align: left;
+}
+
+h4{
+    padding: 0 200px 0 40px;
+    text-align: left;
+}
+
+#bounceIn2 {
+    padding: 60px;
+}
+
+#addIt{
+    background: #FFD470;
+}
+.mdl-layout-title{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 60px;
+    color: #5070B5;
+}
+
+.mdl-layout_drawer, .mdl-layout_drawer.is-visible{
+    width: 300px;
+}
+
+.mdl-layout__drawer>.mdl-layout__title, .mdl-layout__drawer>.mdl-layout-title {
+    padding-left: 10px;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+    color: #000000;
+}
+
+.mdl-mini-footer {
+    background: #FFD470;
+}
+
+/* .mdl-layout__header--transparent.mdl-layout__header--transparent.scrolled {
+    background-color: pink !important;
+    transition: background-color 200ms linear;
+} */

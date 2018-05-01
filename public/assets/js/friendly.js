@@ -1,5 +1,20 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
+
+    $('#bounceIn').addClass('animated bounceInLeft');
+    $('#bounceIn2').addClass('animated bounceInUp');
+
+    // $( window ).scroll(function() {
+    //     $( ".mdl-layout__header--transparent.mdl-layout__header--transparent" ).css( "background", "pink" );
+    //   });
+
+    // $(document).scroll(function () {
+    //     var $nav = $(".mdl-layout__header--transparent.mdl-layout__header--transparent");
+    //     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    // });
+
+    // $('#bounceIn').animateCss('bounceInLeft');
+
     $(".change-done").on("click", function(event) {
       var id = $(this).data("id");
       var newDone = $(this).data("newdone");
