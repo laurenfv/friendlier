@@ -1,5 +1,9 @@
 body {
+<<<<<<< HEAD
     background-color: #FFFFFF;
+=======
+    background-color: #FFFCF2;
+>>>>>>> fddeb13b43ba3a06ac1ad0f05b422473dcb31501
 }
 
 .demo-layout-transparent {
@@ -53,7 +57,11 @@ h4{
 }
 
 .mdl-mini-footer {
+<<<<<<< HEAD
     background: #5070B5;
+=======
+    background: #FFD470;
+>>>>>>> fddeb13b43ba3a06ac1ad0f05b422473dcb31501
 }
 
 /* .mdl-layout__header--transparent.mdl-layout__header--transparent.scrolled {
@@ -67,6 +75,7 @@ h4{
 
 ul {
     font-size: 24px;
+<<<<<<< HEAD
 }
 
 li {
@@ -83,4 +92,6 @@ li {
 
 #colorB {
     background-color: #5070B5;
+=======
+>>>>>>> fddeb13b43ba3a06ac1ad0f05b422473dcb31501
 }
