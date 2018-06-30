@@ -3,18 +3,18 @@ var orm = require("../config/orm.js");
 
 var acts = {
   all: function(cb) {
-    orm.all("random_acts", function(res) {
+    orm.selectAll("random_acts", function(res) {
       cb(res);
     });
   },
   // The variables cols and vals are arrays.
   create: function(cols, vals, cb) {
-    orm.create("random_acts", cols, vals, function(res) {
+    orm.insertOne("random_acts", cols, vals, function(res) {
       cb(res);
     });
   },
   update: function(objColVals, condition, cb) {
-    orm.update("random_acts", objColVals, condition, function(res) {
+    orm.updateOne("random_acts", objColVals, condition, function(res) {
       cb(res);
     });
   }

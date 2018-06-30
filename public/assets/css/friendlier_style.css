@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFCF2;
+    background-color: #FFFFFF;
 }
 
 .demo-layout-transparent {
@@ -53,7 +53,7 @@ h4{
 }
 
 .mdl-mini-footer {
-    background: #FFD470;
+    background: #5070B5;
 }
 
 /* .mdl-layout__header--transparent.mdl-layout__header--transparent.scrolled {
@@ -67,4 +67,20 @@ h4{
 
 ul {
     font-size: 24px;
+}
+
+li {
+    padding: 20px;
+}
+
+.footer-li {
+    padding: 0px;
+}
+
+.mdl-button {
+    margin: 20px;
+}
+
+#colorB {
+    background-color: #5070B5;
 }
