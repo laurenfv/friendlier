@@ -7,7 +7,7 @@ var acts = require("../models/friendlier.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  acts.all(function(data) {
+  acts.selectAll(function(data) {
     var hbsObject = {
       random_acts: data
     };
@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/random_acts", function(req, res) {
-  acts.create([
+  acts.insertOne([
     "act_name", "done"
   ], [
     req.body.act_name, req.body.done
@@ -32,7 +32,7 @@ router.put("/api/random_acts/:id", function(req, res) {
 
   console.log("condition", condition);
 
-  acts.update({
+  acts.updateOne({
     done: req.body.done
   }, condition, function(result) {
     if (result.changedRows == 0) {
