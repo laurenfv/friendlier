@@ -10,10 +10,11 @@ var acts = {
   // The variables cols and vals are arrays.
   create: function(name, cb) {
     orm.insertOne("random_acts", name, cb);
-  },
-  update: function(d, cb) {
-    orm.updateOne("random_acts", id, cb);
-    }
+  }
+  // ,
+  // update: function(d, cb) {
+  //   orm.updateOne("random_acts", id, cb);
+  //   }
 };
 
 // Export the database functions for the controller (catsController.js).
