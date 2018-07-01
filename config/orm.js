@@ -27,21 +27,20 @@ var orm = {
         // Don't use the connection here, it has been returned to the pool.
       });
     })
+  },
+  updateOne: function(tableInput, condition, cb){
+      pool.getConnection(function(err, connection) {
+    // Use the connection
+      connection.query('UPDATE ' +tableInput+ ' SET done=true WHERE id='+condition+';', function (error, results) {
+        cb(results);
+        // And done with the connection.
+        connection.release();
+        // Handle error after the release.
+        if (error) throw error;
+        // Don't use the connection here, it has been returned to the pool.
+      });
+    })
   }
-  // ,
-  // updateOne: function(tableInput, condition, cb){
-  //     pool.getConnection(function(err, connection) {
-  //   // Use the connection
-  //     connection.query('UPDATE ' +tableInput+ ' SET done=true WHERE id='+condition+';', function (error, results) {
-  //       cb(results);
-  //       // And done with the connection.
-  //       connection.release();
-  //       // Handle error after the release.
-  //       if (error) throw error;
-  //       // Don't use the connection here, it has been returned to the pool.
-  //     });
-  //   })
-  // }
 
 }
 
