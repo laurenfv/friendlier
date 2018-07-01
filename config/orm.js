@@ -18,7 +18,7 @@ var orm = {
   insertOne: function(tableInput, val, cb){
       pool.getConnection(function(err, connection) {
     // Use the connection
-      connection.query('INSERT INTO '+tableInput+ " (burger_name) VALUES ('"+val+"');", function (error, results) {
+      connection.query('INSERT INTO '+tableInput+ " (random_acts) VALUES ('"+val+"');", function (error, results) {
         cb(results);
         // And done with the connection.
         connection.release();
@@ -31,7 +31,7 @@ var orm = {
   updateOne: function(tableInput, condition, cb){
       pool.getConnection(function(err, connection) {
     // Use the connection
-      connection.query('UPDATE ' +tableInput+ ' SET devoured=true WHERE id='+condition+';', function (error, results) {
+      connection.query('UPDATE ' +tableInput+ ' SET done=true WHERE id='+condition+';', function (error, results) {
         cb(results);
         // And done with the connection.
         connection.release();
