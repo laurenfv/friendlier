@@ -14,13 +14,6 @@ var acts = {
   update: function(d, cb) {
     orm.updateOne("random_acts", id, cb);
     }
-  }
-//   ,
-//   delete: function(condition, cb) {
-//     orm.delete("random_acts", condition, function(res) {
-//       cb(res);
-//     });
-//   }
 };
 
 // Export the database functions for the controller (catsController.js).
