@@ -8,14 +8,11 @@ var acts = {
     });
   },
   // The variables cols and vals are arrays.
-  create: function(cols, vals, cb) {
-    orm.insertOne("random_acts", cols, vals, function(res) {
-      cb(res);
-    });
+  create: function(name, cb) {
+    orm.insertOne("random_acts", name, cb);
   },
-  update: function(objColVals, condition, cb) {
-    orm.updateOne("random_acts", objColVals, condition, function(res) {
-      cb(res);
+  update: function(d, cb) {
+    orm.updateOne("random_acts", id, cb);
     });
   }
 //   ,
