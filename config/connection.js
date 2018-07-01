@@ -5,8 +5,8 @@ require('dotenv').config();
 //establish a pool connection
 var pool  = mysql.createPool({
   host: "us-cdbr-iron-east-05.cleardb.net",
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
+  user: process.env.DB_User,
+  password: process.env.DB_Password,
   database: "heroku_795fa8d6925eaa0"
 });
 
