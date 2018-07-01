@@ -18,7 +18,7 @@ var orm = {
   insertOne: function(tableInput, val, cb){
       pool.getConnection(function(err, connection) {
     // Use the connection
-      connection.query('INSERT INTO '+tableInput+ " (random_acts) VALUES ('"+val+"');", function (error, results) {
+      connection.query('INSERT INTO '+tableInput+ " (act_name) VALUES ('"+val+"');", function (error, results) {
         cb(results);
         // And done with the connection.
         connection.release();
