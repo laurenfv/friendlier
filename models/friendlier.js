@@ -13,7 +13,7 @@ var acts = {
   },
   update: function(d, cb) {
     orm.updateOne("random_acts", id, cb);
-    });
+    }
   }
 //   ,
 //   delete: function(condition, cb) {
